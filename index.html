@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PORTFOLIO</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Modern+Antiqua">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script"> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+        <style>
+            /* Estilos para la nueva sección de proyectos */
+            #projects {
+                padding: 80px 0;
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                color: white;
+            }
+            
+            .container-projects {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 20px;
+            }
+            
+            #container-projects2 {
+                text-align: center;
+                font-size: 2.5rem;
+                margin-bottom: 50px;
+                color: white;
+                text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            }
+            
+            .projects-container {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+                gap: 30px;
+                margin-top: 40px;
+            }
+            
+            .project-card {
+                background: white;
+                border-radius: 15px;
+                overflow: hidden;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                color: #333;
+            }
+            
+            .project-card:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            }
+            
+            .project-img {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+                background: linear-gradient(45deg, #f093fb 0%, #f5576c 100%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 3rem;
+                color: white;
+                text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            }
+            
+            .project-info {
+                padding: 25px;
+            }
+            
+            .project-title {
+                font-size: 1.4rem;
+                margin-bottom: 15px;
+                color: #333;
+                font-weight: bold;
+            }
+            
+            .project-info p {
+                line-height: 1.6;
+                margin-bottom: 20px;
+                color: #666;
+            }
+            
+            .project-info a {
+                display: inline-block;
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                color: white;
+                padding: 10px 20px;
+                border-radius: 25px;
+                text-decoration: none;
+                font-weight: bold;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+            
+            .project-info a:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+            }
+            
+            @media (max-width: 768px) {
+                .projects-container {
+                    grid-template-columns: 1fr;
+                    gap: 20px;
+                }
+                
+                #container-projects2 {
+                    font-size: 2rem;
+                }
+            }
+        </style>
+    </head>
+   
+    <body>
+        <header>
+            <nav>
+                <div>
+                    <div id="task1">Deborah Yamila</div>
+                    <div id="email"><i class="fas fa-envelope"></i> dyamila@jeemail.com</div>
+                    <div id="phone"><i class="fas fa-phone"></i> +1234567890</div>
+                </div>
+
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#recommendations">Recommendations</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <div class="container-main">
+                <div class="container-texto-section"> 
+                    <section id="about">
+                        <h3 id="container-aboutMe">About me</h3>
+
+                        <div class="about-container">
+                            <img src="images/avatar.png" alt="Profile Image" class="profile-img">
+                            <h2 id="saludo">¡Hola, soy Deborah!</h2>
+                            <p id="presentation">Soy una desarrolladora web junior apasionada por crear experiencias web intuitivas y atractivas. Actualmente, estoy terminando mis estudios en Desarrollo Web, donde he aprendido a trabajar con HTML, CSS, JavaScript y otras tecnologías. Me encanta seguir aprendiendo y mejorando mis habilidades, y estoy emocionada por la oportunidad de contribuir a proyectos innovadores y creativos.</p>
+                        </div>
+                        
+                        <h3 id="container-skills">Skills</h3>
+                        <div class="skills-container">
+                            <div class="skill-card">
+                                <i class="fab fa-html5"></i>
+                                <h3>HTML5 & CSS3</h3>
+                                <p>Dominio de maquetación y estilizado web moderno con responsive design.</p>
+                            </div>
+                            <div class="skill-card">
+                                <i class="fab fa-js"></i>
+                                <h3>JavaScript</h3>
+                                <p>Desarrollo frontend con vanilla JS y frameworks como React y Vue.</p>
+                            </div>
+                            <div class="skill-card">
+                                <i class="fab fa-node-js"></i>
+                                <h3>Node.js</h3>
+                                <p>Creación de APIs REST y aplicaciones backend escalables.</p>
+                            </div>
+                            <div class="skill-card">
+                                <i class="fab fa-react"></i>
+                                <h3>React</h3>
+                                <p>Aplicaciones web con componentes reutilizables y eficientes.</p>
+                            </div>
+                            <div class="skill-card">
+                                <i class="fab fa-python"></i>
+                                <h3>Python</h3>
+                                <p>Desarrollo backend, análisis de datos y automatización de procesos.</p>
+                            </div>
+                            <div class="skill-card">
+                                <i class="fab fa-vuejs"></i>
+                                <h3>Bases de Datos</h3>
+                                <p>Experiencia con SQL, MongoDB y Firebase.</p>
+                            </div>
+                            <div class="skill-card">
+                                <i class="fab fa-angular"></i>
+                                <h3>UX/UI Design</h3>
+                                <p>Diseño de interfaces intuitivas centradas en el usuario.</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <section id="projects">
+                <div class="container-projects">
+                    <h3 id="container-projects2">Proyectos</h3>
+                    <div class="projects-container">
+                        <div class="project-card">
+                            <div class="project-img">🌸</div>
+                            <div class="project-info">
+                                <h4 class="project-title">Atelier de Fleurs</h4>
+                                <p>Atelier de Fleurs es una aplicación móvil que revoluciona la experiencia de compra de arreglos florales al permitir a los usuarios crear ramos completamente personalizados. La aplicación combina la tradición artesanal de la floristería con la conveniencia del comercio digital, ofreciendo una plataforma intuitiva donde los clientes pueden diseñar sus propios arreglos florales desde cero.</p>
+                                <a href="https://docs.google.com/presentation/d/1GCuWDvWZAhp-C5mnESR-qK2GF1Lsvw2NJBjJU8rYf04/edit?slide=id.gd800de29cc_0_80#slide=id.gd800de29cc_0_80" target="_blank">Ver Proyecto</a>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-img">🍽️</div>
+                            <div class="project-info">
+                                <h4 class="project-title">Sabor Express</h4>
+                                <p>Aplicación móvil para restaurante que transforma la experiencia gastronómica al permitir a los comensales explorar el menú interactivo con imágenes 360°, personalizar sus pedidos con ingredientes y modificaciones especiales, y realizar órdenes para delivery o pickup. La app integra un sistema de reservas inteligente, programa de fidelización con puntos, y seguimiento en tiempo real del estado de los pedidos, creando un ecosistema digital completo que conecta la cocina tradicional con la tecnología moderna.</p>
+                                <a href="https://docs.google.com/presentation/d/1GCuWDvWZAhp-C5mnESR-qK2GF1Lsvw2NJBjJU8rYf04/edit?slide=id.gd800de29cc_0_80#slide=id.gd800de29cc_0_80" target="_blank">Ver Proyecto</a>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-img">💪</div>
+                            <div class="project-info">
+                                <h4 class="project-title">FitTrack Pro</h4>
+                                <p>Plataforma web y móvil para gimnasio que revoluciona el fitness personal al ofrecer rutinas de entrenamiento personalizadas basadas en objetivos individuales, seguimiento detallado de progreso con métricas visuales, y sistema de reservas para clases grupales y equipos. La aplicación incluye gamificación con logros y desafíos, integración con wearables, calendario de nutrición personalizado, y comunidad social donde los miembros pueden compartir logros y motivarse mutuamente, transformando el gimnasio tradicional en una experiencia fitness integral.</p>
+                                <a href="https://docs.google.com/presentation/d/1GCuWDvWZAhp-C5mnESR-qK2GF1Lsvw2NJBjJU8rYf04/edit?slide=id.gd800de29cc_0_80#slide=id.gd800de29cc_0_80" target="_blank">Ver Proyecto</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> 
+
+            <section id="recommendations">
+                <div id="container-recommendations">
+                    <h3 id="recommendations-title">Recomendaciones</h3>
+                    <div class="recommendations-container" id="recommendations-list">
+                        <div class="recommendation-card">
+                            <p>"Trabajar con Deborah ha sido una gran experiencia. Captó exactamente la visión de mi negocio y creó un sitio web rápido, moderno y optimizado para SEO. La comunicación fue excelente y siempre estuvo dispuesta a hacer ajustes para asegurar que todo quedara perfecto. ¡Definitivamente la recomiendo!"
+                            </p>
+                        </div>
+                        <div class="recommendation-card">
+                            <p>"Deborah desarrolló nuestra tienda en línea en tiempo récord. Implementó un sistema de pagos seguro y creó una interfaz intuitiva que ha mejorado la experiencia de nuestros clientes. Gracias a su trabajo, nuestras ventas han aumentado un 30%. ¡Muy profesional y altamente recomendable!"</p>
+                        </div>
+                        <div class="recommendation-card">
+                            <p>"Nuestro sitio web era lento y tenía muchos errores. Deborah optimizó el código, mejoró los tiempos de carga y nos ayudó a posicionarnos mejor en Google. Ahora nuestro sitio se ve increíble y funciona a la perfección en todos los dispositivos. ¡Excelente trabajo!"</p>
+                        </div>
+                    </div>
+        
+                    <div class="recommendation-form">
+                        <h3>¿Quieres dejar una recomendación?</h3>
+                        <form id="recommendationForm">
+                            <div class="form-group">
+                                <label for="message">Tu Recomendación:</label>
+                                <textarea id="message" required></textarea>
+                            </div>
+                            <button type="submit">Enviar Recomendación</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <a href="#" class="home-icon">
+                <i class="fas fa-home"></i>
+            </a>
+        
+            <div class="popup" id="confirmationPopup">
+                <div class="popup-content">
+                    <h3>¡Gracias por tu recomendación!</h3>
+                    <p>Tu mensaje ha sido recibido y será añadido a mi portafolio.</p>
+                    <button id="closePopup">Aceptar</button>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <div class="container">
+                <p>© 2025 Deborah Yamila - Desarrolladora Web</p>
+                <p>contacto@deborahyamila.com</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
